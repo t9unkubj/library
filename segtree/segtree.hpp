@@ -1,4 +1,3 @@
-#include"template.hpp"
 template<class T,T (*op)(T, T),T e>
 struct segtree{
     int n;
