@@ -14,14 +14,17 @@ data:
   _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    links: []
-  bundledCode: "#line 1 \"template.hpp\"\n#pragma GCC optimize(\"O3\")\n#define dbg(...)\
-    \ 199958\nusing namespace std;\n#include<bits/stdc++.h>\nusing uint=unsigned;\n\
-    using ll=long long;\nusing ull=unsigned long long;\nusing ld=long double;\nusing\
-    \ pii=pair<int,int>;\nusing pll=pair<ll,ll>;\ntemplate<class T>using vc=vector<T>;\n\
-    template<class T>using vvc=vc<vc<T>>;\ntemplate<class T>using vvvc=vvc<vc<T>>;\n\
-    using vi=vc<int>;\nusing vvi=vc<vi>;\nusing vvvi=vc<vvi>;\nusing vl=vc<ll>;\n\
-    using vvl=vc<vl>;\nusing vvvl=vc<vvl>;\ntemplate<class T>using smpq=priority_queue<T,vector<T>,greater<T>>;\n\
+    PROBLEM: https://onlinejudge.u-aizu.ac.jp/problems/DSL_2_B
+    links:
+    - https://onlinejudge.u-aizu.ac.jp/problems/DSL_2_B
+  bundledCode: "#line 1 \"test/AOJ/DSL_2_B.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DSL_2_B\"\
+    \n#line 1 \"template.hpp\"\n#pragma GCC optimize(\"O3\")\n#define dbg(...) 199958\n\
+    using namespace std;\n#include<bits/stdc++.h>\nusing uint=unsigned;\nusing ll=long\
+    \ long;\nusing ull=unsigned long long;\nusing ld=long double;\nusing pii=pair<int,int>;\n\
+    using pll=pair<ll,ll>;\ntemplate<class T>using vc=vector<T>;\ntemplate<class T>using\
+    \ vvc=vc<vc<T>>;\ntemplate<class T>using vvvc=vvc<vc<T>>;\nusing vi=vc<int>;\n\
+    using vvi=vc<vi>;\nusing vvvi=vc<vvi>;\nusing vl=vc<ll>;\nusing vvl=vc<vl>;\n\
+    using vvvl=vc<vvl>;\ntemplate<class T>using smpq=priority_queue<T,vector<T>,greater<T>>;\n\
     template<class T>using bipq=priority_queue<T>;\n#define rep(i,n) for(ll (i)=0;i<(ll)(n);i++)\n\
     #define REP(i,j,n) for(ll (i)=(j);i<(ll)(n);i++)\n#define DREP(i,n,m) for(ll (i)=(n);i>=(m);i--)\n\
     #define drep(i,n) for(ll i=((n)-1);i>=0;i--)\n#define all(x) x.begin(),x.end()\n\
@@ -85,13 +88,14 @@ data:
     \ 1) {\n        if(not f(op(node[r - 1], ansR))) break;\n        ansR = op(node[--r],\
     \ ansR);\n        R -= w;\n    }\n    while(r <<= 1, w >>= 1){\n        if(R -\
     \ w >= 0 && f(op(node[r - 1], ansR))){\n            ansR = op(node[--r], ansR);\n\
-    \            R -= w;\n        }\n    }\n    return R;\n}\n};\n#line 3 \"test/AOJ/DSL_2_B.test.cpp\"\
+    \            R -= w;\n        }\n    }\n    return R;\n}\n};\n#line 4 \"test/AOJ/DSL_2_B.test.cpp\"\
     \nint main(){\n    INT(n,q);\n    segtree<ll,op,0ll>seg(n);\n    while(q--){\n\
     \        INT(t,x,y);\n        --x;\n        if(t==0)seg.set(x,seg.get(x)+y);\n\
     \        else PRT(seg.prod(x,y));\n    }\n}\n"
-  code: "#include\"template.hpp\"\n#include\"segtree/segtree.hpp\"\nint main(){\n\
-    \    INT(n,q);\n    segtree<ll,op,0ll>seg(n);\n    while(q--){\n        INT(t,x,y);\n\
-    \        --x;\n        if(t==0)seg.set(x,seg.get(x)+y);\n        else PRT(seg.prod(x,y));\n\
+  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DSL_2_B\"\n#include\"\
+    template.hpp\"\n#include\"segtree/segtree.hpp\"\nint main(){\n    INT(n,q);\n\
+    \    segtree<ll,op,0ll>seg(n);\n    while(q--){\n        INT(t,x,y);\n       \
+    \ --x;\n        if(t==0)seg.set(x,seg.get(x)+y);\n        else PRT(seg.prod(x,y));\n\
     \    }\n}\n"
   dependsOn:
   - template.hpp
@@ -99,7 +103,7 @@ data:
   isVerificationFile: true
   path: test/AOJ/DSL_2_B.test.cpp
   requiredBy: []
-  timestamp: '2024-06-03 23:55:14+09:00'
+  timestamp: '2024-06-03 23:57:47+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/AOJ/DSL_2_B.test.cpp
