@@ -1,17 +1,17 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: segtree/segtree.hpp
     title: segtree/segtree.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/problems/DSL_2_B
@@ -72,7 +72,7 @@ data:
     vc<T> &operator*=(vc<T>&a,F b){\n    for (auto&v:a)v*=b;\n    return a;\n}\n#line\
     \ 2 \"segtree/segtree.hpp\"\nusing namespace std;\ntemplate<class T,T (*op)(T,\
     \ T),T e>\nstruct segtree{\n    int n;\n    vector<T>node;\n    segtree(){}\n\
-    \    segtree(int n):n(n)node(n*2,e){}\n    void set(int i,T x){\n        node[i+=n]=x;\n\
+    \    segtree(int n):n(n),node(n*2,e){}\n    void set(int i,T x){\n        node[i+=n]=x;\n\
     \        while(i>>=1)node[i]=op(node[i<<1],node[i<<1|1]);\n    }\n    T prod(int\
     \ l,int r){\n        l+=n,r+=n;\n        T sml=e,smr=e;\n        while(l<r){\n\
     \            if(l&1)sml=op(sml,node[l++]);\n            if(r&1)smr=op(node[--r],smr);\n\
@@ -103,8 +103,8 @@ data:
   isVerificationFile: true
   path: test/AOJ/DSL_2_B.test.cpp
   requiredBy: []
-  timestamp: '2024-06-04 00:01:05+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2024-06-04 00:02:43+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/AOJ/DSL_2_B.test.cpp
 layout: document

@@ -6,7 +6,7 @@ data:
     - icon: ':warning:'
       path: segtree/persistent_segtree.hpp
       title: segtree/persistent_segtree.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: segtree/segtree.hpp
       title: segtree/segtree.hpp
   - name: sparse_table
@@ -19,13 +19,13 @@ data:
       title: sparse_table/sparse_table_two_d.hpp
   - name: .
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template.hpp
       title: template.hpp
   verificationCategories:
   - name: test/AOJ
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ/DSL_2_B.test.cpp
       title: test/AOJ/DSL_2_B.test.cpp
     - icon: ':heavy_check_mark:'

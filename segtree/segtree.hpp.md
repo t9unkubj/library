@@ -3,18 +3,18 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/AOJ/DSL_2_B.test.cpp
     title: test/AOJ/DSL_2_B.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"segtree/segtree.hpp\"\n#include<bits/stdc++.h>\nusing namespace\
     \ std;\ntemplate<class T,T (*op)(T, T),T e>\nstruct segtree{\n    int n;\n   \
-    \ vector<T>node;\n    segtree(){}\n    segtree(int n):n(n)node(n*2,e){}\n    void\
-    \ set(int i,T x){\n        node[i+=n]=x;\n        while(i>>=1)node[i]=op(node[i<<1],node[i<<1|1]);\n\
+    \ vector<T>node;\n    segtree(){}\n    segtree(int n):n(n),node(n*2,e){}\n   \
+    \ void set(int i,T x){\n        node[i+=n]=x;\n        while(i>>=1)node[i]=op(node[i<<1],node[i<<1|1]);\n\
     \    }\n    T prod(int l,int r){\n        l+=n,r+=n;\n        T sml=e,smr=e;\n\
     \        while(l<r){\n            if(l&1)sml=op(sml,node[l++]);\n            if(r&1)smr=op(node[--r],smr);\n\
     \            l>>=1,r>>=1;\n        }\n        return op(sml,smr);\n    }\n   \
@@ -32,7 +32,7 @@ data:
     \            R -= w;\n        }\n    }\n    return R;\n}\n};\n"
   code: "#include<bits/stdc++.h>\nusing namespace std;\ntemplate<class T,T (*op)(T,\
     \ T),T e>\nstruct segtree{\n    int n;\n    vector<T>node;\n    segtree(){}\n\
-    \    segtree(int n):n(n)node(n*2,e){}\n    void set(int i,T x){\n        node[i+=n]=x;\n\
+    \    segtree(int n):n(n),node(n*2,e){}\n    void set(int i,T x){\n        node[i+=n]=x;\n\
     \        while(i>>=1)node[i]=op(node[i<<1],node[i<<1|1]);\n    }\n    T prod(int\
     \ l,int r){\n        l+=n,r+=n;\n        T sml=e,smr=e;\n        while(l<r){\n\
     \            if(l&1)sml=op(sml,node[l++]);\n            if(r&1)smr=op(node[--r],smr);\n\
@@ -53,8 +53,8 @@ data:
   isVerificationFile: false
   path: segtree/segtree.hpp
   requiredBy: []
-  timestamp: '2024-06-03 23:55:14+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  timestamp: '2024-06-04 00:02:43+09:00'
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/AOJ/DSL_2_B.test.cpp
 documentation_of: segtree/segtree.hpp
