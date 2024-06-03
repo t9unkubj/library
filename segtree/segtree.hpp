@@ -5,7 +5,7 @@ struct segtree{
     int n;
     vector<T>node;
     segtree(){}
-    segtree(int n):n(n)node(n*2,e){}
+    segtree(int n):n(n),node(n*2,e){}
     void set(int i,T x){
         node[i+=n]=x;
         while(i>>=1)node[i]=op(node[i<<1],node[i<<1|1]);
