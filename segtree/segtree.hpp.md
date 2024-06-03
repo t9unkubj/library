@@ -1,14 +1,17 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: template.hpp
     title: template.hpp
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: test/AOJ/DSL_2_B.test.cpp
+    title: test/AOJ/DSL_2_B.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "#line 1 \"template.hpp\"\n#pragma GCC optimize(\"O3\")\n#define dbg(...)\
@@ -105,8 +108,9 @@ data:
   path: segtree/segtree.hpp
   requiredBy: []
   timestamp: '2024-06-03 23:42:02+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - test/AOJ/DSL_2_B.test.cpp
 documentation_of: segtree/segtree.hpp
 layout: document
 redirect_from:

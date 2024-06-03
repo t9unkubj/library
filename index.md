@@ -6,7 +6,7 @@ data:
     - icon: ':warning:'
       path: segtree/persistent_segtree.hpp
       title: segtree/persistent_segtree.hpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: segtree/segtree.hpp
       title: segtree/segtree.hpp
   - name: sparse_table
@@ -19,7 +19,7 @@ data:
       title: sparse_table/sparse_table2d.hpp
   - name: .
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template.hpp
       title: template.hpp
   verificationCategories:
