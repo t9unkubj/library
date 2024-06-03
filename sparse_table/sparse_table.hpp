@@ -1,4 +1,3 @@
-#include"template.hpp"
 template<class T>
 struct sparse_table{
 	std::vector<std::vector<T>>data;
