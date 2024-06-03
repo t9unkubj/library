@@ -89,21 +89,21 @@ data:
     \ ansR);\n        R -= w;\n    }\n    while(r <<= 1, w >>= 1){\n        if(R -\
     \ w >= 0 && f(op(node[r - 1], ansR))){\n            ansR = op(node[--r], ansR);\n\
     \            R -= w;\n        }\n    }\n    return R;\n}\n};\n#line 4 \"test/AOJ/DSL_2_B.test.cpp\"\
-    \nint main(){\n    INT(n,q);\n    segtree<ll,op,0ll>seg(n);\n    while(q--){\n\
-    \        INT(t,x,y);\n        --x;\n        if(t==0)seg.set(x,seg.get(x)+y);\n\
+    \nll op(ll a,ll b){return  a+b;}\nint main(){\n    INT(n,q);\n    segtree<ll,op,0ll>seg(n);\n\
+    \    while(q--){\n        INT(t,x,y);\n        --x;\n        if(t==0)seg.set(x,seg.get(x)+y);\n\
     \        else PRT(seg.prod(x,y));\n    }\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DSL_2_B\"\n#include\"\
-    template.hpp\"\n#include\"segtree/segtree.hpp\"\nint main(){\n    INT(n,q);\n\
-    \    segtree<ll,op,0ll>seg(n);\n    while(q--){\n        INT(t,x,y);\n       \
-    \ --x;\n        if(t==0)seg.set(x,seg.get(x)+y);\n        else PRT(seg.prod(x,y));\n\
-    \    }\n}\n"
+    template.hpp\"\n#include\"segtree/segtree.hpp\"\nll op(ll a,ll b){return  a+b;}\n\
+    int main(){\n    INT(n,q);\n    segtree<ll,op,0ll>seg(n);\n    while(q--){\n \
+    \       INT(t,x,y);\n        --x;\n        if(t==0)seg.set(x,seg.get(x)+y);\n\
+    \        else PRT(seg.prod(x,y));\n    }\n}\n"
   dependsOn:
   - template.hpp
   - segtree/segtree.hpp
   isVerificationFile: true
   path: test/AOJ/DSL_2_B.test.cpp
   requiredBy: []
-  timestamp: '2024-06-03 23:57:47+09:00'
+  timestamp: '2024-06-04 00:01:05+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/AOJ/DSL_2_B.test.cpp
