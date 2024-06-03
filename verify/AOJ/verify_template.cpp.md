@@ -65,16 +65,16 @@ data:
     \ (auto&v:a)v += b;\n    return a;\n}\ntemplate<class T, class F>\nvc<T> &operator-=(vc<T>&a,F\
     \ b){\n    for (auto&v:a)v-=b;\n    return a;\n}\ntemplate<class T, class F>\n\
     vc<T> &operator*=(vc<T>&a,F b){\n    for (auto&v:a)v*=b;\n    return a;\n}\n#line\
-    \ 3 \"verify/AOJ/verify_template.cpp\"\nint main(){\n    cout<<\"Hello,world\"\
+    \ 3 \"verify/AOJ/verify_template.cpp\"\nint main(){\n    cout<<\"Hello world\"\
     <<endl;\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A\"\
-    \n#include\"template.hpp\"\nint main(){\n    cout<<\"Hello,world\"<<endl;\n}\n"
+    \n#include\"template.hpp\"\nint main(){\n    cout<<\"Hello world\"<<endl;\n}\n"
   dependsOn:
   - template.hpp
   isVerificationFile: false
   path: verify/AOJ/verify_template.cpp
   requiredBy: []
-  timestamp: '2024-06-03 23:23:24+09:00'
+  timestamp: '2024-06-03 23:25:27+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: verify/AOJ/verify_template.cpp
