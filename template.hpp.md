@@ -1,7 +1,10 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: segtree/segtree.hpp
+    title: segtree/segtree.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/AOJ/template.test.cpp
@@ -118,7 +121,8 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: template.hpp
-  requiredBy: []
+  requiredBy:
+  - segtree/segtree.hpp
   timestamp: '2024-06-03 23:23:13+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:

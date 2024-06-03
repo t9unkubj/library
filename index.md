@@ -1,6 +1,14 @@
 ---
 data:
   libraryCategories:
+  - name: segtree
+    pages:
+    - icon: ':warning:'
+      path: segtree/persistent_segtree.hpp
+      title: segtree/persistent_segtree.hpp
+    - icon: ':warning:'
+      path: segtree/segtree.hpp
+      title: segtree/segtree.hpp
   - name: .
     pages:
     - icon: ':heavy_check_mark:'
