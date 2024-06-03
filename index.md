@@ -1,11 +1,6 @@
 ---
 data:
-  libraryCategories:
-  - name: .
-    pages:
-    - icon: ':warning:'
-      path: segtree.cpp
-      title: segtree.cpp
+  libraryCategories: []
   verificationCategories:
   - name: .
     pages:
