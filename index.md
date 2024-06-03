@@ -3,14 +3,14 @@ data:
   libraryCategories:
   - name: .
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: template.hpp
       title: template.hpp
+  verificationCategories:
   - name: test/AOJ
     pages:
-    - icon: ':warning:'
-      path: test/AOJ/template_test.cpp
-      title: test/AOJ/template_test.cpp
-  verificationCategories: []
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ/template.test.cpp
+      title: test/AOJ/template.test.cpp
 layout: toppage
 ---

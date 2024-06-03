@@ -1,14 +1,14 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: test/AOJ/template_test.cpp
-    title: test/AOJ/template_test.cpp
-  _extendedVerifiedWith: []
+  _extendedRequiredBy: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/AOJ/template.test.cpp
+    title: test/AOJ/template.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"template.hpp\"\n#pragma GCC optimize(\"O3\")\n#define dbg(...)\
@@ -118,11 +118,11 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: template.hpp
-  requiredBy:
-  - test/AOJ/template_test.cpp
+  requiredBy: []
   timestamp: '2024-06-03 23:23:13+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/AOJ/template.test.cpp
 documentation_of: template.hpp
 layout: document
 redirect_from:
