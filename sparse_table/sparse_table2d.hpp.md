@@ -8,8 +8,8 @@ data:
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"sparse_table/sparse_table2d.hpp\"\n\ntemplate<class T>\n\
-    struct sparse_table2d{\n    T****val;//(a,b)\u306B\u304A\u3044\u3066[a+2^i],[a+2^j]\u306E\
+  bundledCode: "#line 1 \"sparse_table/sparse_table2d.hpp\"\ntemplate<class T>\nstruct\
+    \ sparse_table2d{\n    T****val;//(a,b)\u306B\u304A\u3044\u3066[a+2^i],[a+2^j]\u306E\
     \u6F14\u7B97\u7D50\u679C\u3092\u8868\u3059\n    vector<int>log;\n    using F=function<T(T,T)>;\n\
     \    F op;\n    int l1,l2;\n    int n_;\n    sparse_table2d(vector<vector<T>>node,F\
     \ op):op(op){\n        int n=node.size(),m=node[0].size();\n        int log1{};\n\
@@ -43,7 +43,7 @@ data:
     \u3092\u8FD4\u3059O(1)\n        int xl=log[rx-lx];\n        int yl=log[ry-ly];\n\
     \        return max(max(val[xl][yl][lx][ly],val[xl][yl][rx-(1<<xl)][ly]),max(val[xl][yl][lx][ry-(1<<yl)],val[xl][yl][rx-(1<<xl)][ry-(1<<yl)]));\n\
     \    }\n};\n"
-  code: "\ntemplate<class T>\nstruct sparse_table2d{\n    T****val;//(a,b)\u306B\u304A\
+  code: "template<class T>\nstruct sparse_table2d{\n    T****val;//(a,b)\u306B\u304A\
     \u3044\u3066[a+2^i],[a+2^j]\u306E\u6F14\u7B97\u7D50\u679C\u3092\u8868\u3059\n\
     \    vector<int>log;\n    using F=function<T(T,T)>;\n    F op;\n    int l1,l2;\n\
     \    int n_;\n    sparse_table2d(vector<vector<T>>node,F op):op(op){\n       \
@@ -82,7 +82,7 @@ data:
   isVerificationFile: false
   path: sparse_table/sparse_table2d.hpp
   requiredBy: []
-  timestamp: '2024-06-03 23:45:15+09:00'
+  timestamp: '2024-06-03 23:50:19+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: sparse_table/sparse_table2d.hpp
