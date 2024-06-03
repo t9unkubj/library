@@ -1,4 +1,3 @@
-#include"template.cpp"
 template<class T>
 struct persistent_seg{
     struct Node;
