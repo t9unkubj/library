@@ -67,11 +67,12 @@ data:
     \ (auto&v:a)v += b;\n    return a;\n}\ntemplate<class T, class F>\nvc<T> &operator-=(vc<T>&a,F\
     \ b){\n    for (auto&v:a)v-=b;\n    return a;\n}\ntemplate<class T, class F>\n\
     vc<T> &operator*=(vc<T>&a,F b){\n    for (auto&v:a)v*=b;\n    return a;\n}\n#line\
-    \ 1 \"segtree/segtree.hpp\"\ntemplate<class T,T (*op)(T, T),T e>\nstruct segtree{\n\
-    \    int n;\n    vector<T>node;\n    segtree(){}\n    segtree(int n):n(n)node(n*2,e){}\n\
-    \    void set(int i,T x){\n        node[i+=n]=x;\n        while(i>>=1)node[i]=op(node[i<<1],node[i<<1|1]);\n\
-    \    }\n    T prod(int l,int r){\n        l+=n,r+=n;\n        T sml=e,smr=e;\n\
-    \        while(l<r){\n            if(l&1)sml=op(sml,node[l++]);\n            if(r&1)smr=op(node[--r],smr);\n\
+    \ 2 \"segtree/segtree.hpp\"\nusing namespace std;\ntemplate<class T,T (*op)(T,\
+    \ T),T e>\nstruct segtree{\n    int n;\n    vector<T>node;\n    segtree(){}\n\
+    \    segtree(int n):n(n)node(n*2,e){}\n    void set(int i,T x){\n        node[i+=n]=x;\n\
+    \        while(i>>=1)node[i]=op(node[i<<1],node[i<<1|1]);\n    }\n    T prod(int\
+    \ l,int r){\n        l+=n,r+=n;\n        T sml=e,smr=e;\n        while(l<r){\n\
+    \            if(l&1)sml=op(sml,node[l++]);\n            if(r&1)smr=op(node[--r],smr);\n\
     \            l>>=1,r>>=1;\n        }\n        return op(sml,smr);\n    }\n   \
     \ T get(int i){\n\t\treturn node[i+n];\n\t}\n    template<class F> int max_right(int\
     \ L, F f) const {\n    long long l = n + L, w = 1, ansL = e;\n    for(; L + w\
@@ -98,7 +99,7 @@ data:
   isVerificationFile: true
   path: test/AOJ/DSL_2_B.test.cpp
   requiredBy: []
-  timestamp: '2024-06-03 23:52:37+09:00'
+  timestamp: '2024-06-03 23:55:14+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/AOJ/DSL_2_B.test.cpp
