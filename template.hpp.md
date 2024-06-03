@@ -1,14 +1,17 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: verify/AOJ/verify_template.cpp
+    title: verify/AOJ/verify_template.cpp
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"template.cpp\"\n#pragma GCC optimize(\"O3\")\n#define dbg(...)\
+  bundledCode: "#line 1 \"template.hpp\"\n#pragma GCC optimize(\"O3\")\n#define dbg(...)\
     \ 199958\nusing namespace std;\n#include<bits/stdc++.h>\nusing uint=unsigned;\n\
     using ll=long long;\nusing ull=unsigned long long;\nusing ld=long double;\nusing\
     \ pii=pair<int,int>;\nusing pll=pair<ll,ll>;\ntemplate<class T>using vc=vector<T>;\n\
@@ -114,15 +117,16 @@ data:
     vc<T> &operator*=(vc<T>&a,F b){\n    for (auto&v:a)v*=b;\n    return a;\n}\n"
   dependsOn: []
   isVerificationFile: false
-  path: template.cpp
-  requiredBy: []
-  timestamp: '2024-06-03 23:09:03+09:00'
+  path: template.hpp
+  requiredBy:
+  - verify/AOJ/verify_template.cpp
+  timestamp: '2024-06-03 23:23:13+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: template.cpp
+documentation_of: template.hpp
 layout: document
 redirect_from:
-- /library/template.cpp
-- /library/template.cpp.html
-title: template.cpp
+- /library/template.hpp
+- /library/template.hpp.html
+title: template.hpp
 ---

@@ -4,8 +4,8 @@ data:
   - name: .
     pages:
     - icon: ':warning:'
-      path: template.cpp
-      title: template.cpp
+      path: template.hpp
+      title: template.hpp
   - name: verify/AOJ
     pages:
     - icon: ':warning:'
