@@ -15,8 +15,8 @@ data:
       path: sparse_table/sparse_table.hpp
       title: sparse_table/sparse_table.hpp
     - icon: ':warning:'
-      path: sparse_table/sparse_table2d.hpp
-      title: sparse_table/sparse_table2d.hpp
+      path: sparse_table/sparse_table_two_d.hpp
+      title: sparse_table/sparse_table_two_d.hpp
   - name: .
     pages:
     - icon: ':question:'
