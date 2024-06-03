@@ -5,9 +5,6 @@ data:
   - icon: ':warning:'
     path: segtree/segtree.hpp
     title: segtree/segtree.hpp
-  - icon: ':warning:'
-    path: sparse_table/sparse_table2d.hpp
-    title: sparse_table/sparse_table2d.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/AOJ/template.test.cpp
@@ -125,7 +122,6 @@ data:
   isVerificationFile: false
   path: template.hpp
   requiredBy:
-  - sparse_table/sparse_table2d.hpp
   - segtree/segtree.hpp
   timestamp: '2024-06-03 23:23:13+09:00'
   verificationStatus: LIBRARY_ALL_AC
