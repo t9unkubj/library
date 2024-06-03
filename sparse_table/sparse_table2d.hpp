@@ -1,4 +1,3 @@
-
 template<class T>
 struct sparse_table2d{
     T****val;//(a,b)において[a+2^i],[a+2^j]の演算結果を表す
