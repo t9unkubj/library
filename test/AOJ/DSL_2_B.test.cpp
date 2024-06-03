@@ -1,5 +1,5 @@
 #include"template.hpp"
-#include"segtree.hpp"
+#include"segtree/segtree.hpp"
 int main(){
     INT(n,q);
     segtree<ll,op,0ll>seg(n);
