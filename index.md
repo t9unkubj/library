@@ -25,6 +25,9 @@ data:
   verificationCategories:
   - name: test/AOJ
     pages:
+    - icon: ':x:'
+      path: test/AOJ/DSL_2_B.test.cpp
+      title: test/AOJ/DSL_2_B.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJ/template.test.cpp
       title: test/AOJ/template.test.cpp
