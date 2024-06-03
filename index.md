@@ -8,7 +8,7 @@ data:
       title: segtree/persistent_segtree.hpp
     - icon: ':heavy_check_mark:'
       path: segtree/segtree.hpp
-      title: segtree/segtree.hpp
+      title: segment tree
   - name: sparse_table
     pages:
     - icon: ':warning:'

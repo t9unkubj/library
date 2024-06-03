@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: segtree/segtree.hpp
-    title: segtree/segtree.hpp
+    title: segment tree
   - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp

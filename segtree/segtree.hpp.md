@@ -59,8 +59,11 @@ data:
   - test/AOJ/DSL_2_B.test.cpp
 documentation_of: segtree/segtree.hpp
 layout: document
-redirect_from:
-- /library/segtree/segtree.hpp
-- /library/segtree/segtree.hpp.html
-title: segtree/segtree.hpp
+title: segment tree
 ---
+###使い方
+基本的にACLと一緒
+set(i,x)      : $A[i]$に$X$を代入する      $O(logN)$
+prod(l,r)     : $prod_{i=l}^r A[i]$を返す　$O(logN)$
+get(i)        : $A[i]$を返す               $O(1)$
+max_right(l,f): あんまわかってない
