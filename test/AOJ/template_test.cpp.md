@@ -12,7 +12,7 @@ data:
   attributes:
     links:
     - https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A
-  bundledCode: "#line 1 \"verify/AOJ/verify_template.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A\"\
+  bundledCode: "#line 1 \"test/AOJ/template_test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A\"\
     \n#line 1 \"template.hpp\"\n#pragma GCC optimize(\"O3\")\n#define dbg(...) 199958\n\
     using namespace std;\n#include<bits/stdc++.h>\nusing uint=unsigned;\nusing ll=long\
     \ long;\nusing ull=unsigned long long;\nusing ld=long double;\nusing pii=pair<int,int>;\n\
@@ -65,22 +65,22 @@ data:
     \ (auto&v:a)v += b;\n    return a;\n}\ntemplate<class T, class F>\nvc<T> &operator-=(vc<T>&a,F\
     \ b){\n    for (auto&v:a)v-=b;\n    return a;\n}\ntemplate<class T, class F>\n\
     vc<T> &operator*=(vc<T>&a,F b){\n    for (auto&v:a)v*=b;\n    return a;\n}\n#line\
-    \ 3 \"verify/AOJ/verify_template.cpp\"\nint main(){\n    cout<<\"Hello World\"\
-    <<endl;\n}\n"
+    \ 3 \"test/AOJ/template_test.cpp\"\nint main(){\n    cout<<\"Hello World\"<<endl;\n\
+    }\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A\"\
     \n#include\"template.hpp\"\nint main(){\n    cout<<\"Hello World\"<<endl;\n}\n"
   dependsOn:
   - template.hpp
   isVerificationFile: false
-  path: verify/AOJ/verify_template.cpp
+  path: test/AOJ/template_test.cpp
   requiredBy: []
-  timestamp: '2024-06-03 23:26:53+09:00'
+  timestamp: '2024-06-03 23:33:39+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: verify/AOJ/verify_template.cpp
+documentation_of: test/AOJ/template_test.cpp
 layout: document
 redirect_from:
-- /library/verify/AOJ/verify_template.cpp
-- /library/verify/AOJ/verify_template.cpp.html
-title: verify/AOJ/verify_template.cpp
+- /library/test/AOJ/template_test.cpp
+- /library/test/AOJ/template_test.cpp.html
+title: test/AOJ/template_test.cpp
 ---

@@ -6,11 +6,11 @@ data:
     - icon: ':warning:'
       path: template.hpp
       title: template.hpp
-  - name: verify/AOJ
+  - name: test/AOJ
     pages:
     - icon: ':warning:'
-      path: verify/AOJ/verify_template.cpp
-      title: verify/AOJ/verify_template.cpp
+      path: test/AOJ/template_test.cpp
+      title: test/AOJ/template_test.cpp
   verificationCategories: []
 layout: toppage
 ---

@@ -3,8 +3,8 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':warning:'
-    path: verify/AOJ/verify_template.cpp
-    title: verify/AOJ/verify_template.cpp
+    path: test/AOJ/template_test.cpp
+    title: test/AOJ/template_test.cpp
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -119,7 +119,7 @@ data:
   isVerificationFile: false
   path: template.hpp
   requiredBy:
-  - verify/AOJ/verify_template.cpp
+  - test/AOJ/template_test.cpp
   timestamp: '2024-06-03 23:23:13+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
