@@ -1,3 +1,5 @@
+#include<bits/stdc++.h>
+using namespace std;
 template<class T,T (*op)(T, T),T e>
 struct segtree{
     int n;
