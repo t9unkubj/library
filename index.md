@@ -9,6 +9,11 @@ data:
     - icon: ':warning:'
       path: segtree/segtree.hpp
       title: segtree/segtree.hpp
+  - name: sparse_table
+    pages:
+    - icon: ':warning:'
+      path: sparse_table/sparse_table.hpp
+      title: sparse_table/sparse_table.hpp
   - name: .
     pages:
     - icon: ':heavy_check_mark:'
