@@ -21,9 +21,6 @@ data:
     - icon: ':warning:'
       path: my_template.hpp
       title: my_template.hpp
-    - icon: ':warning:'
-      path: template.hpp
-      title: template.hpp
   - name: test
     pages:
     - icon: ':warning:'
