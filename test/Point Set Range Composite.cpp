@@ -7,11 +7,11 @@
 void solve(){
     int n,q;
     cin>>n>>q;
-    segtree<monoid>seg(n);
+    segtree<monoid<mint>>seg(n);
     rep(i,n){
         mint a,b;
         cin>>a>>b;
-        seg.set(i,monoid(a,b));
+        seg.set(i,monoid<mint>(a,b));
     }
     while(q--){
         int t;
@@ -19,7 +19,7 @@ void solve(){
         if(t==0){
             int p,c,d;
             cin>>p>>c>>d;
-            seg.set(p,{c,d});
+            seg.set(p,monoid<mint>{c,d});
         }else{
             int l,r,x;
             cin>>l>>r>>x;
