@@ -1,23 +1,23 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: data_structure/monoid/affine.hpp
     title: data_structure/monoid/affine.hpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: data_structure/segment_trees/segtree.hpp
     title: data_structure/segment_trees/segtree.hpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: modint/mint.hpp
     title: modint/mint.hpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: my_template.hpp
     title: my_template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/point_set_range_composite
@@ -53,8 +53,8 @@ data:
   isVerificationFile: true
   path: test/Point Set Range Composite.test.cpp
   requiredBy: []
-  timestamp: '2024-12-26 14:59:05+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2024-12-26 15:01:42+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/Point Set Range Composite.test.cpp
 layout: document
