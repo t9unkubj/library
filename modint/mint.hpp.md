@@ -4,11 +4,11 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"modint/mint.cpp\"\ntemplate<class T,class G,class F>\nF\
+  bundledCode: "#line 1 \"modint/mint.hpp\"\ntemplate<class T,class G,class F>\nF\
     \ modpow(T x,G p,F m){\n    T ret=1%m;\n    x%=m;\n    while(p){\n        if(p&1)ret=(1ll*ret*x)%m;\n\
     \        x=(1ll*x*x)%m;\n        p>>=1;\n    }\n    return ret;\n}\ntemplate<class\
     \ T>\nT extgcd(T a,T b,T&x,T&y){//ax+by=gcd(a,b)\u3068\u306A\u308B\u3088\u3046\
@@ -112,15 +112,15 @@ data:
     }\n"
   dependsOn: []
   isVerificationFile: false
-  path: modint/mint.cpp
+  path: modint/mint.hpp
   requiredBy: []
-  timestamp: '2024-12-26 14:39:37+09:00'
+  timestamp: '2024-12-26 14:43:29+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: modint/mint.cpp
+documentation_of: modint/mint.hpp
 layout: document
 redirect_from:
-- /library/modint/mint.cpp
-- /library/modint/mint.cpp.html
-title: modint/mint.cpp
+- /library/modint/mint.hpp
+- /library/modint/mint.hpp.html
+title: modint/mint.hpp
 ---

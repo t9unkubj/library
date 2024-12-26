@@ -14,8 +14,8 @@ data:
   - name: modint
     pages:
     - icon: ':warning:'
-      path: modint/mint.cpp
-      title: modint/mint.cpp
+      path: modint/mint.hpp
+      title: modint/mint.hpp
   - name: .
     pages:
     - icon: ':warning:'
