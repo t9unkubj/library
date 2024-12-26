@@ -1,6 +1,11 @@
 ---
 data:
   libraryCategories:
+  - name: data_structure/monoid
+    pages:
+    - icon: ':warning:'
+      path: data_structure/monoid/affine.cpp
+      title: data_structure/monoid/affine.cpp
   - name: data_structure/segment_trees
     pages:
     - icon: ':warning:'
