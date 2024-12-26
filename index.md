@@ -21,11 +21,11 @@ data:
     - icon: ':warning:'
       path: my_template.hpp
       title: my_template.hpp
+  verificationCategories:
   - name: test
     pages:
-    - icon: ':warning:'
-      path: test/Point Set Range Composite.cpp
-      title: test/Point Set Range Composite.cpp
-  verificationCategories: []
+    - icon: ':x:'
+      path: test/Point Set Range Composite.test.cpp
+      title: test/Point Set Range Composite.test.cpp
 layout: toppage
 ---

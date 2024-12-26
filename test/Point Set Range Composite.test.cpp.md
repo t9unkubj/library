@@ -3,12 +3,10 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
-  attributes:
-    links:
-    - https://judge.yosupo.jp/problem/point_set_range_composite
+  _verificationStatusIcon: ':x:'
+  attributes: {}
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.12.8/x64/lib/python3.12/site-packages/onlinejudge_verify/documentation/build.py\"\
     , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
@@ -32,16 +30,16 @@ data:
     \   cout<<seg.prod(l,r).a*x+seg.prod(l,r).b<<\"\\n\";\n        }\n    }\n}\nint\
     \ main(){\n    solve();\n}\n"
   dependsOn: []
-  isVerificationFile: false
-  path: test/Point Set Range Composite.cpp
+  isVerificationFile: true
+  path: test/Point Set Range Composite.test.cpp
   requiredBy: []
   timestamp: '1970-01-01 00:00:00+00:00'
-  verificationStatus: LIBRARY_NO_TESTS
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
-documentation_of: test/Point Set Range Composite.cpp
+documentation_of: test/Point Set Range Composite.test.cpp
 layout: document
 redirect_from:
-- /library/test/Point Set Range Composite.cpp
-- /library/test/Point Set Range Composite.cpp.html
-title: test/Point Set Range Composite.cpp
+- /verify/test/Point Set Range Composite.test.cpp
+- /verify/test/Point Set Range Composite.test.cpp.html
+title: test/Point Set Range Composite.test.cpp
 ---
