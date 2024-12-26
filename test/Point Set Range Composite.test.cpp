@@ -2,7 +2,7 @@
 
 #include "my_template.hpp"
 #include "modint/mint.hpp"
-#include "data_struture/segment_trees"
+#include "data_struture/segment_trees/segtree.hpp"
 #include "data_struture/monoid/affine.hpp"
 void solve(){
     int n,q;
