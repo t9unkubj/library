@@ -24,12 +24,13 @@ data:
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/point_set_range_composite\"\
     \n\n#include \"my_template.hpp\"\n#include \"modint/mint.hpp\"\n#include \"data_struture/segment_trees\"\
     \n#include \"data_struture/monoid/affine.hpp\"\nvoid solve(){\n    int n,q;\n\
-    \    cin>>n>>q;\n    segtree<monoid>seg(n);\n    rep(i,n){\n        mint a,b;\n\
-    \        cin>>a>>b;\n        seg.set(i,monoid(a,b));\n    }\n    while(q--){\n\
-    \        int t;\n        cin>>t;\n        if(t==0){\n            int p,c,d;\n\
-    \            cin>>p>>c>>d;\n            seg.set(p,{c,d});\n        }else{\n  \
-    \          int l,r,x;\n            cin>>l>>r>>x;\n            cout<<seg.prod(l,r).a*x+seg.prod(l,r).b<<\"\
-    \\n\";\n        }\n    }\n}\nint main(){\n    solve();\n}\n"
+    \    cin>>n>>q;\n    segtree<monoid<mint>>seg(n);\n    rep(i,n){\n        mint\
+    \ a,b;\n        cin>>a>>b;\n        seg.set(i,monoid<mint>(a,b));\n    }\n   \
+    \ while(q--){\n        int t;\n        cin>>t;\n        if(t==0){\n          \
+    \  int p,c,d;\n            cin>>p>>c>>d;\n            seg.set(p,monoid<mint>{c,d});\n\
+    \        }else{\n            int l,r,x;\n            cin>>l>>r>>x;\n         \
+    \   cout<<seg.prod(l,r).a*x+seg.prod(l,r).b<<\"\\n\";\n        }\n    }\n}\nint\
+    \ main(){\n    solve();\n}\n"
   dependsOn: []
   isVerificationFile: false
   path: test/Point Set Range Composite.cpp
