@@ -4,11 +4,11 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"data_structure/segment_trees/segtree.cpp\"\ntemplate<class\
+  bundledCode: "#line 1 \"data_structure/segment_trees/segtree.hpp\"\ntemplate<class\
     \ monoid>\nstruct segtree{\n    int n;\n    vector<monoid>node;\n    static monoid\
     \ e(){\n        return monoid::e();\n    }\n    static monoid op(monoid a,monoid\
     \ b){\n        return monoid::op(a,b);\n    }\n\n    segtree(){}\n    segtree(int\
@@ -61,15 +61,15 @@ data:
     \ }\n        }\n        return R;\n    }\n};\n"
   dependsOn: []
   isVerificationFile: false
-  path: data_structure/segment_trees/segtree.cpp
+  path: data_structure/segment_trees/segtree.hpp
   requiredBy: []
-  timestamp: '2024-12-26 14:31:41+09:00'
+  timestamp: '2024-12-26 14:42:55+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: data_structure/segment_trees/segtree.cpp
+documentation_of: data_structure/segment_trees/segtree.hpp
 layout: document
 redirect_from:
-- /library/data_structure/segment_trees/segtree.cpp
-- /library/data_structure/segment_trees/segtree.cpp.html
-title: data_structure/segment_trees/segtree.cpp
+- /library/data_structure/segment_trees/segtree.hpp
+- /library/data_structure/segment_trees/segtree.hpp.html
+title: data_structure/segment_trees/segtree.hpp
 ---

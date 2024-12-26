@@ -9,8 +9,8 @@ data:
   - name: data_structure/segment_trees
     pages:
     - icon: ':warning:'
-      path: data_structure/segment_trees/segtree.cpp
-      title: data_structure/segment_trees/segtree.cpp
+      path: data_structure/segment_trees/segtree.hpp
+      title: data_structure/segment_trees/segtree.hpp
   - name: modint
     pages:
     - icon: ':warning:'
@@ -18,6 +18,9 @@ data:
       title: modint/mint.cpp
   - name: .
     pages:
+    - icon: ':warning:'
+      path: my_template.hpp
+      title: my_template.hpp
     - icon: ':warning:'
       path: template.hpp
       title: template.hpp
