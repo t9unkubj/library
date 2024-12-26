@@ -2,8 +2,8 @@
 
 #include "my_template.hpp"
 #include "modint/mint.hpp"
-#include "data_struture/segment_trees/segtree.hpp"
-#include "data_struture/monoid/affine.hpp"
+#include "data_structure/segment_trees/segtree.hpp"
+#include "data_structure/monoid/affine.hpp"
 void solve(){
     int n,q;
     cin>>n>>q;
