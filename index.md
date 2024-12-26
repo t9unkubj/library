@@ -11,6 +11,11 @@ data:
     - icon: ':warning:'
       path: data_structure/segment_trees/segtree.cpp
       title: data_structure/segment_trees/segtree.cpp
+  - name: modint
+    pages:
+    - icon: ':warning:'
+      path: modint/mint.cpp
+      title: modint/mint.cpp
   - name: .
     pages:
     - icon: ':warning:'
