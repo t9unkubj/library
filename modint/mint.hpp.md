@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: test/Point Set Range Composite.test.cpp
+    title: test/Point Set Range Composite.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "#line 1 \"modint/mint.hpp\"\ntemplate<class T,class G,class F>\nF\
@@ -115,8 +118,9 @@ data:
   path: modint/mint.hpp
   requiredBy: []
   timestamp: '2024-12-26 14:43:29+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - test/Point Set Range Composite.test.cpp
 documentation_of: modint/mint.hpp
 layout: document
 redirect_from:
