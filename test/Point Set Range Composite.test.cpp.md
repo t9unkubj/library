@@ -20,7 +20,7 @@ data:
     \ my_template.hpp: line 2: unable to process #include in #if / #ifdef / #ifndef\
     \ other than include guards\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/point_set_range_composite\"\
-    \n\n#include \"my_template.hpp\"\n#include \"modint/mint.hpp\"\n#include \"data_struture/segment_trees\"\
+    \n\n#include \"my_template.hpp\"\n#include \"modint/mint.hpp\"\n#include \"data_struture/segment_trees/segtree.hpp\"\
     \n#include \"data_struture/monoid/affine.hpp\"\nvoid solve(){\n    int n,q;\n\
     \    cin>>n>>q;\n    segtree<monoid<mint>>seg(n);\n    rep(i,n){\n        mint\
     \ a,b;\n        cin>>a>>b;\n        seg.set(i,monoid<mint>(a,b));\n    }\n   \
