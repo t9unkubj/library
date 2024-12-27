@@ -1,6 +1,6 @@
 ---
 title: segment tree
-documentation_of: segtree/segtree.hpp
+documentation_of: data_structure/segment_trees/segtree.hpp
 ---
 ###使い方
 基本的にACLと一緒  
