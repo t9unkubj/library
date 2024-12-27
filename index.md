@@ -10,7 +10,7 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: data_structure/segment_trees/segtree.hpp
-      title: data_structure/segment_trees/segtree.hpp
+      title: segment tree
   - name: modint
     pages:
     - icon: ':heavy_check_mark:'
